@@ -17,11 +17,10 @@ public class ExemploIntefaceFunc {
 			
 		}
 	};
-	
 	fig1.desenha();
 	
+	//Lambda expression
 	Figura fig2 = () -> System.out.println("Desenha figura");
-	
 	fig2.desenha();
 		
 	}

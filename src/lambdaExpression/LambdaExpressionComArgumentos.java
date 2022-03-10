@@ -28,6 +28,10 @@ class Produto {
 	public void setPreco(Double preco) {
 		this.preco = preco;
 	}
+	
+	public void imprime() {
+		System.out.println(nome + " " + preco);
+	}
 
 }
 
@@ -66,6 +70,9 @@ public class LambdaExpressionComArgumentos {
         
 		//Method Reference invocado atraves de uma classe com metodo estático.
 		lista.forEach(Impressora::imprime);
+		
+		//Method Reference invocado atraves de uma classe.
+		lista.forEach(Produto::imprime);
 
 	}
 }

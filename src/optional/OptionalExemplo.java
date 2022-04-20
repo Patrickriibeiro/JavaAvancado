@@ -78,9 +78,9 @@ public class OptionalExemplo {
 	
 	public static void main(String[] args) {
 		
-		Curso cursoAdm = new Curso("Administração");
+		Curso cursoAdm = new Curso("Administraï¿½ï¿½o");
 		
-		Aluno jose = new Aluno("José");
+		Aluno jose = new Aluno("Josï¿½");
 		jose.setMatricula(new Matricula("11100"));
 		//Adiciona aluno ao curso
 		cursoAdm.getListaAlunos().add(jose);
@@ -90,7 +90,7 @@ public class OptionalExemplo {
 		//Adiciona aluno ao curso
 		cursoAdm.getListaAlunos().add(maria);
 		
-		//SEM MATRÍCULA !!!
+		//SEM MATRï¿½CULA !!!
 		Aluno ana = new Aluno("Ana");
 		//Adiciona aluno ao curso
 		cursoAdm.getListaAlunos().add(ana);
@@ -100,14 +100,16 @@ public class OptionalExemplo {
 		//Adiciona aluno ao curso
 		cursoAdm.getListaAlunos().add(paulo);
 		
-		//Exibe o nome do aluno e o número de sua matrícula no curso
+		//Exibe o nome do aluno e o nï¿½mero de sua matrï¿½cula no curso
 		cursoAdm.getListaAlunos().stream()
 		
 		.filter( a -> a.getMatricula().isPresent() )
 		
-		.forEach( a -> System.out.println(a.getNome() + " - " + a.getMatricula().get().getNumero() ));
-		
+		.forEach( a -> System.out.println(a.getNome() + " - " + a.getMatricula().get().getNumero() ));	
 	}
 	
+	
+	
+			
 }
 

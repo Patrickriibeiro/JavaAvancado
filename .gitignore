@@ -3,3 +3,4 @@
 .classpath
 bin/aulas/ExemploThread.class
 *.class
+/.metadata/
